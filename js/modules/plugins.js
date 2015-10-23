@@ -54,21 +54,20 @@
               td.each(function(i, e){
                 if($(e).find('span').html() == moment().hour()){
                   if(moment().minute() > 30){
-                    var altura  = $(e).next().height()/30;
-                    var minuntos = altura*(min-30);
-                    console.log(minuntos);
+                    var height  = $(e).next().height()/30;
+                    var minute = height*(min-30);
                     $(td).eq(i+1).next().append('<div class="timeline"></div>');
                     $('.timeline').css({
-                      'margin-top': minuntos,
+                      'margin-top': minute,
                       'width'     : $('.fc-day-header').width()
                     });
                     updateTimeline(e);
                   }else{
-                    var altura   = $(e).next().height()/30;
-                    var minuntos = altura*min;
+                    var height   = $(e).next().height()/30;
+                    var minute = height*min;
                     $(e).next().append('<div class="timeline"></div>');
                     $('.timeline').css({
-                      'margin-top': minuntos,
+                      'margin-top': minute,
                       'width'     : $('.fc-day-header').width()
                     });
                     updateTimeline(e);
@@ -80,13 +79,13 @@
                   var min = moment().minute();
                   if(moment().minute() > 30) {
                     console.info(moment().minute());
-                    var altura = $(e).next().height() / 30;
-                    var minuntos = altura * (min - 30);
-                    $('.timeline').css('margin-top', minuntos);
+                    var height = $(e).next().height() / 30;
+                    var minute = height * (min - 30);
+                    $('.timeline').css('margin-top', minute);
                   }else{
-                    var altura   = $(e).next().height()/30;
-                    var minuntos = altura*min;
-                    $('.timeline').css('margin-top', minuntos);
+                    var height   = $(e).next().height()/30;
+                    var minute = height*min;
+                    $('.timeline').css('margin-top', minute);
                   }
                 },60*1000)
               }
@@ -95,7 +94,6 @@
 
             return function () {
               timeline();
-              }
             };
           break;
           case 'slotDuration':
