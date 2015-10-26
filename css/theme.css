@@ -1,0 +1,81 @@
+body, h1, h2, h3, h4, h5, h6, span, p, div, li{
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 100 !important;
+}
+.view{ padding-top: 30px; }
+.ui.right.fixed.vertical.menu.ng-scope{ display: none; }
+.item.slider-header h3.ng-binding {
+  margin-top: 5%;
+  display: inline-block;
+}
+.item.slider-header i{
+  float: right;
+  font-size: 44px;
+  margin-top: 5%;
+  cursor: pointer;
+}
+.item{
+  color: #FFF !important;
+}
+.item .logo{
+  width: 68px !important;
+}
+.timeline {
+  position: absolute;
+  left: 25px;
+  border: none;
+  border-top: 2px solid red;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 999;
+}
+.timeline::after {
+  width: 0;
+  height: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid red;
+}
+.timeline::before {
+  width: 0;
+  height: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right:10px solid red;
+}
+.item.slider-header{
+  background: #1D5E98 !important;
+  height: 8em !important;
+}
+.ui.right.fixed.vertical.menu.slider {
+  width: 45rem !important;
+  border: 0;
+  /*-webkit-box-shadow: 5px 0px 20px 0px rgba(102,102,102,0.50) !important;*/
+  /*-moz-box-shadow:    5px 0px 20px 0px rgba(102,102,102,0.50) !important;*/
+  /*box-shadow:         5px 0px 20px 0px rgba(102,102,102,0.50) !important;*/
+  -webkit-box-shadow: -5px 0px 20px 0px rgba(102,102,102,0.50) !important;
+  -moz-box-shadow:    -5px 0px 20px 0px rgba(102,102,102,0.50) !important;
+  box-shadow:         -5px 0px 20px 0px rgba(102,102,102,0.50) !important;
+}
+.ui.right.fixed.vertical.menu.sub-slider{
+  width: 42rem !important;
+  border: 0;
+  box-shadow: -5px 0px 20px 0px rgba(0,0,0,0.50) !important;
+}
+.sub-slider .item.slider-header{
+  background-color: #2C82D0 !important;
+}
+.fc-view {
+  position: relative;
+}

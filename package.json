@@ -1,0 +1,25 @@
+{
+  "name": "ui-calendar-timeline",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cleiton-tavares/ui-calendar-timeline.git"
+  },
+  "author": "Cleiton Tavares <cleitontavares@live.com> (http://about.me/cleitontavares)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cleiton-tavares/ui-calendar-timeline/issues"
+  },
+  "homepage": "https://github.com/cleiton-tavares/ui-calendar-timeline#readme",
+  "dependencies": {
+    "connect": "^3.4.0",
+    "open": "0.0.5",
+    "readline": "^1.0.1",
+    "serve-static": "*"
+  }
+}
